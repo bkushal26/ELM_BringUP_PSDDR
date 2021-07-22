@@ -7,6 +7,12 @@ This Repository is used to Test ZYNQ-DDR interface for the ELM board.
 ``` git clone --recursive git@github.com:bkushal26/ELM_BringUP_PSDDR.git```.
 
 ## Git Repo Structure:
+This repo consists of 2 branches-
+
+1. Main- Corresponds to Latest test version (using Vivado2020.1 and Vitis)
+2. viv191- Old already tested project on vivado2019.1 and SDK, keeping it as a reference.
+
+***Note-*** This project is under development so repo and readme is incomplete, need to modify the instructions for Vivado-2020.1 version
 
 ### manual
 
