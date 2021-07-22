@@ -1,0 +1,56 @@
+01:41:22 **** Build of configuration Debug for project psDDR ****
+make all 
+Building file: ../src/xmt_common.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_common.o" -I/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_common.d" -MT"src/xmt_common.o" -o "src/xmt_common.o" "../src/xmt_common.c"
+In file included from ../src/xmt_common.h:48,
+                 from ../src/xmt_common.c:35:
+/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+Finished building: ../src/xmt_common.c
+ 
+Building file: ../src/xmt_main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_main.o" -I/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_main.d" -MT"src/xmt_main.o" -o "src/xmt_main.o" "../src/xmt_main.c"
+In file included from ../src/xmt_common.h:48,
+                 from ../src/xmt_main.c:33:
+/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+Finished building: ../src/xmt_main.c
+ 
+Building file: ../src/xmt_read_eye.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_read_eye.o" -I/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_read_eye.d" -MT"src/xmt_read_eye.o" -o "src/xmt_read_eye.o" "../src/xmt_read_eye.c"
+In file included from ../src/xmt_common.h:48,
+                 from ../src/xmt_read_eye.c:32:
+/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+Finished building: ../src/xmt_read_eye.c
+ 
+Building file: ../src/xmt_write_eye.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_write_eye.o" -I/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_write_eye.d" -MT"src/xmt_write_eye.o" -o "src/xmt_write_eye.o" "../src/xmt_write_eye.c"
+In file included from ../src/xmt_common.h:48,
+                 from ../src/xmt_write_eye.c:32:
+/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+Finished building: ../src/xmt_write_eye.c
+ 
+Building target: psDDR.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/sw/ps_block_wrapper/domain_psu_cortexa53_0/bsplib/lib -o "psDDR.elf"  ./src/xmt_common.o ./src/xmt_main.o ./src/xmt_read_eye.o ./src/xmt_write_eye.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: psDDR.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size psDDR.elf  |tee "psDDR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60356	   4768	  20660	  85784	  14f18	psDDR.elf
+Finished building: psDDR.elf.size
+ 
+
+01:41:23 Build Finished (took 1s.961ms)
+

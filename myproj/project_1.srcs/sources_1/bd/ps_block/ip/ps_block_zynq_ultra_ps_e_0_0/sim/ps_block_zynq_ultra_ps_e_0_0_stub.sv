@@ -46,10 +46,16 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-//-----------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------
 // Filename:    ps_block_zynq_ultra_ps_e_0_0_stub.sv
-// Description: This HDL file is intended to be used with Xilinx Vivado Simulator (XSIM) only.
-//-----------------------------------------------------------------------------
+// Description: This HDL file is intended to be used with following simulators only:
+//
+//   Vivado Simulator (XSim)
+//   Cadence Xcelium Simulator
+//   Aldec Riviera-PRO Simulator
+//
+//------------------------------------------------------------------------------------
 `ifdef XILINX_SIMULATOR
 
 `ifndef XILINX_SIMULATOR_BITASBOOL
@@ -62,5 +68,23 @@ module ps_block_zynq_ultra_ps_e_0_0 (
   output bit_as_bool pl_resetn0,
   output bit_as_bool pl_clk0
 );
+endmodule
+`endif
+
+`ifdef XCELIUM
+(* XMSC_MODULE_EXPORT *)
+module ps_block_zynq_ultra_ps_e_0_0 (pl_resetn0,pl_clk0)
+(* integer foreign = "SystemC";
+*);
+  output wire pl_resetn0;
+  output wire pl_clk0;
+endmodule
+`endif
+
+`ifdef RIVIERA
+(* SC_MODULE_EXPORT *)
+module ps_block_zynq_ultra_ps_e_0_0 (pl_resetn0,pl_clk0)
+  output wire pl_resetn0;
+  output wire pl_clk0;
 endmodule
 `endif

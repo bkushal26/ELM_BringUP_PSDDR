@@ -24,15 +24,27 @@ set script_folder [_tcl::get_script_folder]
 # Check if script is running in correct Vivado version.
 ################################################################
 set scripts_vivado_version 2019.1
+set scripts_vivado_version1 2020.1
+
 set current_vivado_version [version -short]
 
-if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+if {( [string first $scripts_vivado_version $current_vivado_version] || [string first $scripts_vivado_version1 $current_vivado_version]) == -1 } {
    puts ""
-   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> or <$scipts_vivado_version1> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> or <$scripts_vivado_version1> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
 
    return 1
 }
 
+#++++++++++++++++++++++++++++++++++++++++++++++++++old logic+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#set current_vivado_version [version -short]
+
+#if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+#   puts ""
+#   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+
+#   return 1
+#}
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ##########################Create HW Project####################################
 
 # If there is no project opened, this script will create a
@@ -41,7 +53,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 #set list_projs [get_projects -quiet]
 #if { $list_projs eq "" } {
-   create_project project_1 myproj -part xczu4cg-sfvc784-2-e
+   create_project -force project_1 myproj -part xczu4cg-sfvc784-2-e
 #}
 #################################################################################
 
@@ -1575,9 +1587,23 @@ export_simulation -of_objects [get_files myproj/project_1.srcs/sources_1/bd/ps_b
 
 #################################Export HW + launch_sdk###########################################################################
 #Note:does not include bit stream
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#file mkdir myproj/project_1.sdk
+#write_hwdef -force  -file myproj/project_1.sdk/ps_block_wrapper.hdf
+#launch_sdk -workspace myproj/project_1.sdk -hwspec myproj/project_1.sdk/ps_block_wrapper.hdf
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#new logic
+if {[string compare $current_vivado_version $scripts_vivado_version] == 0} {
+        file mkdir myproj/project_1.sdk
+        file copy -force myproj/project_1.runs/impl_1/ps_block_wrapper.sysdef myproj/project_1.sdk/ps_block_wrapper.hdf
+#       write_hwdef -force  -file myproj/project_1.sdk/ps_block_wrapper.hdf
+	launch_sdk -workspace myproj/project_1.sdk -hwspec myproj/project_1.sdk/ps_block_wrapper.hdf
+} elseif {[string compare $current_vivado_version $scripts_vivado_version1] == 0} {
+        set_property pfm_name {} [get_files -all {myproj/project_1.srcs/sources_1/bd/ps_block/ps_block.bd}]
+        write_hw_platform -fixed  -force -file myproj/ps_block_wrapper.xsa
+	#write_hw_platform -fixed -include_bit -force -file myproj/ps_block_wrapper.xsa
+	#add launch vitis command here
+}
 
-file mkdir myproj/project_1.sdk
-write_hwdef -force  -file myproj/project_1.sdk/ps_block_wrapper.hdf
-launch_sdk -workspace myproj/project_1.sdk -hwspec myproj/project_1.sdk/ps_block_wrapper.hdf
 
 #########################################################################################################################################

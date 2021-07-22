@@ -46,6 +46,7 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
+
 #include "ps_block_zynq_ultra_ps_e_0_0_sc.h"
 
 #include "ps_block_zynq_ultra_ps_e_0_0.h"
@@ -55,17 +56,106 @@
 #include <map>
 #include <string>
 
-ps_block_zynq_ultra_ps_e_0_0::ps_block_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : ps_block_zynq_ultra_ps_e_0_0_sc(nm)
+
+
+
+
+#ifdef XILINX_SIMULATOR
+ps_block_zynq_ultra_ps_e_0_0::ps_block_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : ps_block_zynq_ultra_ps_e_0_0_sc(nm), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
 {
 
   // initialize pins
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
+
 }
 
 void ps_block_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 {
 }
+
+#endif // XILINX_SIMULATOR
+
+
+
+
+#ifdef XM_SYSTEMC
+ps_block_zynq_ultra_ps_e_0_0::ps_block_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : ps_block_zynq_ultra_ps_e_0_0_sc(nm), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+{
+
+  // initialize pins
+  mp_impl->pl_resetn0(pl_resetn0);
+  mp_impl->pl_clk0(pl_clk0);
+
+}
+
+void ps_block_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
+{
+}
+
+#endif // XM_SYSTEMC
+
+
+
+
+#ifdef RIVIERA
+ps_block_zynq_ultra_ps_e_0_0::ps_block_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : ps_block_zynq_ultra_ps_e_0_0_sc(nm), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+{
+
+  // initialize pins
+  mp_impl->pl_resetn0(pl_resetn0);
+  mp_impl->pl_clk0(pl_clk0);
+
+}
+
+void ps_block_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
+{
+}
+
+#endif // RIVIERA
+
+
+
+
+#ifdef VCSSYSTEMC
+ps_block_zynq_ultra_ps_e_0_0::ps_block_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : ps_block_zynq_ultra_ps_e_0_0_sc(nm),  pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+{
+  // initialize pins
+  mp_impl->pl_resetn0(pl_resetn0);
+  mp_impl->pl_clk0(pl_clk0);
+  // Instantiate Socket Stubs
+
+
+}
+
+void ps_block_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
+{
+}
+
+#endif // VCSSYSTEMC
+
+
+
+
+#ifdef MTI_SYSTEMC
+ps_block_zynq_ultra_ps_e_0_0::ps_block_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : ps_block_zynq_ultra_ps_e_0_0_sc(nm),  pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+{
+  // initialize pins
+  mp_impl->pl_resetn0(pl_resetn0);
+  mp_impl->pl_clk0(pl_clk0);
+  // Instantiate Socket Stubs
+
+
+}
+
+void ps_block_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
+{
+}
+
+#endif // MTI_SYSTEMC
+
+
+
 
 ps_block_zynq_ultra_ps_e_0_0::~ps_block_zynq_ultra_ps_e_0_0()
 {
@@ -74,3 +164,12 @@ ps_block_zynq_ultra_ps_e_0_0::~ps_block_zynq_ultra_ps_e_0_0()
 #ifdef MTI_SYSTEMC
 SC_MODULE_EXPORT(ps_block_zynq_ultra_ps_e_0_0);
 #endif
+
+#ifdef XM_SYSTEMC
+XMSC_MODULE_EXPORT(ps_block_zynq_ultra_ps_e_0_0);
+#endif
+
+#ifdef RIVIERA
+SC_MODULE_EXPORT(ps_block_zynq_ultra_ps_e_0_0);
+#endif
+

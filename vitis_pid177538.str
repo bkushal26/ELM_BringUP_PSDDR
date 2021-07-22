@@ -1,0 +1,157 @@
+/*
+
+Xilinx Vitis v2020.1.0 (64-bit) [Major: 2020, Minor: 1]
+SW Build 2902540 on Wed May 27 19:55:13 MDT 2020
+
+Process ID (PID): 177538
+License: Customer
+
+Current time: 	Thu Jul 22 00:59:39 EDT 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: CentOS Linux release 8.2.2004 (Core)
+OS Version: 4.18.0-193.19.1.el8_2.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :1
+Screen size: 1920x1057
+Available screens: 1
+Available disk space: 11 GB
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 4 GB
+
+Java library paths: /home/software/xilinx/Vitis/2020.1/lib/lnx64.o/Default:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o:/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib/:/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib//server:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o/Default:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o:/home/software/xilinx/Vivado/2020.1/bin/../lnx64/tools/dot/lib:/home/software/xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /home/software/xilinx/Vitis/2020.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar
+LD_LIBRARY_PATH: /home/software/xilinx/Vitis
+
+User name: 	bhalerao
+User home directory: /home/bhalerao
+User working directory: /home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/software/xilinx/Vitis
+HDI_APPROOT: /home/software/xilinx/Vitis/2020.1
+RDI_DATADIR: /home/software/xilinx/Vitis/2020.1/data
+RDI_BINDIR: /home/software/xilinx/Vitis/2020.1/bin
+
+Vitis preferences directory: /home/bhalerao/.Xilinx/Vitis/2020.1/
+Vitis workspace directory: /home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR
+Vitis workspace log file location: /home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /home/software/xilinx/Vitis/2020.1
+XILINX_PLANAHEAD: /home/software/xilinx/Vitis/2020.1
+XILINX_SDK: /home/software/xilinx/Vitis/2020.1
+XILINX_VITIS: /home/software/xilinx/Vitis/2020.1
+XILINX_VIVADO: /home/software/xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: /home/software/xilinx/Vivado/2020.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectToolBarMenuButton("Run", "ddrTests", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectButton("Close", "Run Configurations", "LaunchConfigurationsDialog", "Button.CLOSE");
+selectTree("ddrTests_system", "Explorer", "ProjectExplorer", "Tree");
+selectTree("ddrTests", "ddrTests_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectToolBarMenuButton("Run", "ddrTests", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run As", "Explorer", "WorkbenchWindow", "MenuItem.RUN_AS");
+selectMenuItem("3 Launch on Hardware", "ddrTests", "WorkbenchWindow", "MenuItem.3_LAUNCH_ON_HARDWARE");
+selectButton("Proceed", "Warning", "MessageDialogWithToggle", "Button.PROCEED");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectTree("ddrTests", "ddrTests_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Run As", "Explorer", "WorkbenchWindow", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch on Hardware", "ddrTests", "WorkbenchWindow", "MenuItem.1_LAUNCH_ON_HARDWARE");
+selectButton("Proceed", "Warning", "MessageDialogWithToggle", "Button.PROCEED");
+selectButton("Details", "Error Launching Program", "ErrorDialog", "Button.DETAILS");
+selectMenuItem("©", "Error Launching Program", "ErrorDialog", "MenuItem.©");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectToolBarMenuButton("Run", "ddrTests", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTab("Main", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.MAIN");
+selectTreeTable("ddrTests", "ddrTests_system", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTree("ddrTests_system", "ddrTests_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Properties", "Explorer", "ProjectExplorer", "MenuItem.PROPERTIES");
+selectButton("Cancel", "Properties for ddrTests_system", "PropertyDialog", "Button.CANCEL");
+selectTree("ddrTests", "ddrTests_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Properties", "Explorer", "ProjectExplorer", "MenuItem.PROPERTIES");
+selectButton("Cancel", "Properties for ddrTests", "PropertyDialog", "Button.CANCEL");
+selectTree("ddrTests", "ddrTests_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectCheckBox("Delete project contents on disk", Boolean.TRUE, "Delete Resources", "RefactoringWizardDialog2", "Button.DELETE_PROJECT_CONTENTS");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTree("ddrTests_system.sprj", "ddrTests_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectTab("Select a platform from repository", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.SELECT_A_PLATFORM");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("psDDR", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("Zynq MP DRAM tests", "SW development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+selectTree("psDDR.prj", "psDDR_system > psDDR", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("psDDR", "psDDR_system", "Explorer", "ProjectExplorer", "Tree");
+selectToolBarMenuButton("Run", "psDDR", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTree("Single Application Debug", EventType.DOUBLE_CLICK, "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectCheckBox("Emulation", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.EMULATION");
+selectTree("Single Application Debug", "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectButton("Save", "Save Changes", "MessageDialog", "Button.SAVE");
+selectTree("Single Application Debug", EventType.DOUBLE_CLICK, "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectCheckBox("Emulation", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.EMULATION");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTab("Target Setup", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectCheckBox("Reset APU", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.RESET_APU");
+selectCheckBox("Reset RPU", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.RESET_RPU");
+selectCheckBox("Enable RPU Split Mode", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.ENABLE_RPU_SPLIT");
+selectButton("Apply", "Run Configurations", "LaunchConfigurationsDialog", "Button.APPLY");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTab("Main", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.MAIN");
+selectTree("psDDR", "psDDR_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Build Project", "Explorer", "WorkbenchWindow", "MenuItem.BUILD_PROJECT");
+selectTree("psDDR", "psDDR_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectToolBarMenuButton("Run", "psDDR", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTree("Debugger_psDDR-Default", "Single Application Debug", "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_psDDR-GDB", "Single Application Debug", "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTab("Target Setup", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTab("Main", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.MAIN");
+selectTree("psDDR", "psDDR_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Run As", "Explorer", "WorkbenchWindow", "MenuItem.RUN_AS");
+selectMenuItem("3 Launch on Hardware", "psDDR", "WorkbenchWindow", "MenuItem.3_LAUNCH_ON_HARDWARE");
+selectButton("Cancel", "Warning", "MessageDialogWithToggle", "Button.CANCEL");
+selectTree("ddrTests_system", "Explorer", "ProjectExplorer", "Tree");
+selectButton("Navigate to BSP Settings", "psDDR", "SDXSettingsEditor", "Button.NAVIGATE_TO_BSP");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectTree("psDDR_system", "Explorer", "ProjectExplorer", "Tree");
+selectTree("ps_block_wrapper", "ps_block_wrapper", "ScwEditor", "Tree");
+activateView("psDDR", "psDDR/psDDR.prj", "SDXSettingsEditor", "CTabItem.PSDDR");
+activateView("psDDR_system", "psDDR_system/psDDR_system.sprj", "SystemSettingsEditor", "CTabItem.PSDDR_SYSTEM");
+selectToolBarMenuButton("Run", "psDDR_system", "WorkbenchWindow", "ToolItem.RUN");
+selectTree("psDDR", "psDDR_system", "Explorer", "ProjectExplorer", "Tree");
+selectToolBarMenuButton("Run", "psDDR", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("1 Debugger_psDDR-GDB_1", "Explorer", "WorkbenchWindow", "MenuItem.1_DEBUGGER_PSDDR_GDB_1");
+selectButton("Proceed", "Warning", "MessageDialogWithToggle", "Button.PROCEED");
+selectButton("Yes", "Overwrite Boot Mode", "MessageDialogWithToggle", "Button.YES");

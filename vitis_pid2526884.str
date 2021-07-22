@@ -1,0 +1,71 @@
+/*
+
+Xilinx Vitis v2020.1.0 (64-bit) [Major: 2020, Minor: 1]
+SW Build 2902540 on Wed May 27 19:55:13 MDT 2020
+
+Process ID (PID): 2526884
+License: Customer
+
+Current time: 	Mon Jul 19 06:06:09 EDT 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: CentOS Linux release 8.2.2004 (Core)
+OS Version: 4.18.0-193.19.1.el8_2.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :1
+Screen size: 1536x841
+Available screens: 1
+Available disk space: 11 GB
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 4 GB
+
+Java library paths: /home/software/xilinx/Vitis/2020.1/lib/lnx64.o/Default:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o:/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib/:/home/software/xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib//server:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o/Default:/home/software/xilinx/Vitis/2020.1/lib/lnx64.o:/home/software/xilinx/Vivado/2020.1/bin/../lnx64/tools/dot/lib:/home/software/xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /home/software/xilinx/Vitis/2020.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar
+LD_LIBRARY_PATH: /home/software/xilinx/Vitis
+
+User name: 	bhalerao
+User home directory: /home/bhalerao
+User working directory: /home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/software/xilinx/Vitis
+HDI_APPROOT: /home/software/xilinx/Vitis/2020.1
+RDI_DATADIR: /home/software/xilinx/Vitis/2020.1/data
+RDI_BINDIR: /home/software/xilinx/Vitis/2020.1/bin
+
+Vitis preferences directory: /home/bhalerao/.Xilinx/Vitis/2020.1/
+Vitis workspace directory: /home/bhalerao/workspace
+Vitis workspace log file location: /home/bhalerao/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /home/software/xilinx/Vitis/2020.1
+XILINX_PLANAHEAD: /home/software/xilinx/Vitis/2020.1
+XILINX_SDK: /home/software/xilinx/Vitis/2020.1
+XILINX_VITIS: /home/software/xilinx/Vitis/2020.1
+XILINX_VIVADO: /home/software/xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: /home/software/xilinx/Vivado/2020.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Cancel", "New Application Project (Platform)", "NewAppProjectWizard", "Button.CANCEL");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 7/19/21, 6:08:19 AM EDT
+// Elapsed time: 00:02:11
+

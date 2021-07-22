@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="psDDR" location="/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/psDDR" platform="/home/bhalerao/kushal/ELM_test_suites/vivadoProjects/DDR4/ddrTest201/ELM_BringUP_PSDDR/ps_block_wrapper/export/ps_block_wrapper/ps_block_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="psDDR_system" sysConfig="ps_block_wrapper" runtime="C/C++" cpu="domain_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="33b49cd7c0adde9a1fba4b874bc98389">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.883494366">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.2135246248" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynqmp_dram_test"/>
+</sdkproject:SdkProject>
