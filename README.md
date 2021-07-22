@@ -8,6 +8,13 @@ This Repository is used to Test ZYNQ-DDR interface for the ELM board.
 
 ## Git Repo Structure:
 
+This repo consists of 2 branches-
+
+Main- Corresponds to Latest test version (using Vivado2020.1 and Vitis)
+viv191- Old already tested project on vivado2019.1 and SDK, keeping it as a reference.
+
+***Note- This project is under development so repo and readme is incomplete, need to modify the instructions for Vivado-2020.1 version***
+
 ### manual
 
 contains steps on how to execute the steps in doc and pdf format.
