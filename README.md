@@ -15,28 +15,15 @@ viv191- Old already tested project on vivado2019.1 and SDK, keeping it as a refe
 
 ***Note- This project is under development so repo and readme is incomplete, need to modify the instructions for Vivado-2020.1 version***
 
-### manual
-
-contains steps on how to execute the steps in doc and pdf format.
+### Wiki Page for Test Instructions 
+The instructions to conduct DDR Tests can be found in [Wiki](https://github.com/bkushal26/ELM_BringUP_PSDDR/wiki) page. The project has been tested for 2 vivado versions. Vivado 2019.1 and 2020. Respective instructions can be found in the Wiki link.
 
 ### myproj
-Working Vivado project saved in this folder
+Working Vivado project saved in this folder kept as backup. Detail instructions can be found in [Wiki](https://github.com/bkushal26/ELM_BringUP_PSDDR/wiki) page.
 
 ### tcl
-this folder contains tcl file which needs to be sourced when starting from scratch
+This folder contains tcl file which needs to be sourced when starting from scratch. 
 
-## Create a new project from scratch:
-
-1. check the current working directory has 'tcl' folder.
-2. Launch Vivado (2019.1)
-3. In Vivado Tcl Console run :```source tcl/psddr.tcl```
-
-## Use existing Project:-
-
-1. ```cd myproj```
-2. Launch Vivado
-3. Lunch XSDK from Vivado: ```File``` -> ```Launch SDK``` (accept defaults, click OK).
-4. Follow the Run configuration settings given in manual
 
 ## useful commands
 
