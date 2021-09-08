@@ -16,7 +16,7 @@ viv191- Old already tested project on vivado2019.1 and SDK, keeping it as a refe
 ***Note- This project is under development so repo and readme is incomplete, need to modify the instructions for Vivado-2020.1 version***
 
 ### Wiki Page for Test Instructions 
-The instructions to conduct DDR Tests can be found in [Wiki](https://github.com/bkushal26/ELM_BringUP_PSDDR/wiki) page. The project has been tested for 2 vivado versions. Vivado 2019.1 and 2020. Respective instructions can be found in the Wiki link.
+The instructions to conduct DDR Tests can be found in [Wiki](https://github.com/bkushal26/ELM_BringUP_PSDDR/wiki) page. The project has been tested for 2 vivado versions. Vivado 2019.1 and 2020.1 Current Version being used is 2020.1. Respective instructions can be found in the Wiki link.
 
 ### myproj
 Working Vivado project saved in this folder kept as backup. Detail instructions can be found in [Wiki](https://github.com/bkushal26/ELM_BringUP_PSDDR/wiki) page.
