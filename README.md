@@ -24,6 +24,10 @@ Working Vivado project saved in this folder kept as backup. Detail instructions 
 ### tcl
 This folder contains tcl file which needs to be sourced when starting from scratch. 
 
+### psDDR
+
+This folder contains source codes for testing DRAM. This is the template available from the Vitis library. Details can be found in the Wiki page.
+
 
 ## useful commands
 
